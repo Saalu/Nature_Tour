@@ -1,0 +1,17 @@
+{
+  "name": "natures",
+  "version": "1.0.0",
+  "description": "Landing page for natures",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Saalu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
