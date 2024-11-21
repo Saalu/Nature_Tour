@@ -1,0 +1,19 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 6rem;
+    font-size: $default-font-size;
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        background-color: goldenrod;
+        // shape-outside: circle();
+    }
+
+    
+}
