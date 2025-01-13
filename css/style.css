@@ -308,8 +308,8 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
-  background-color: #fff;
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.6rem;
@@ -352,7 +352,13 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1; }
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
