@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link, 
     &:visited{
         text-decoration: none;
@@ -8,6 +9,9 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
+
+        border: none;
+        cursor: pointer;
     }
 
     &--animated{
@@ -25,7 +29,9 @@
         }
     }
 
-    &:active{
+    &:active,
+    &:focus{
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.3);
     }
