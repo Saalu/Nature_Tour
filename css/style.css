@@ -105,14 +105,19 @@ body {
 .u-margin-top-big {
   margin-top: 6rem; }
 
-.btn:link, .btn:visited {
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
-  position: relative; }
+  position: relative;
+  border: none;
+  cursor: pointer; }
 
 .btn--animated {
   animation: monveInBottom 1s ease-out .75s;
@@ -125,7 +130,8 @@ body {
     transform: scale(1.5);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
