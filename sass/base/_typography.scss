@@ -4,7 +4,6 @@ body{
     font-size: $default-font-size;
     line-height: 1.7;
     color:  $color-grey-dark;
-    padding: 2rem;
 }
 
 .heading-primary{
@@ -21,14 +20,23 @@ body{
         animation-name: monveInLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
     }
     &--sub{
         display: block;
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.75rem;
-    
         animation: monveInRight 2s ease-out;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+            // font-family: 5rem;
+        }
     }
 }
 
