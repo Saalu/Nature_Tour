@@ -98,6 +98,12 @@ body {
   background-clip: text;
   color: transparent;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-style: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-style: 2.5rem; } }
   .heading-secondary:hover {
     transform: scale(1.1);
     transform: translateY(-0.5rem); }
