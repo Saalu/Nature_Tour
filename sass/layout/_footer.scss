@@ -3,9 +3,17 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
+    @include respond(port){
+        padding: 8rem 0;
+    }
+
     &__logo-box{
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(port){
+            margin-bottom: 6rem;
+        }
     }
     &__logo{
         width: 15rem;
@@ -13,9 +21,13 @@
     }
     &__navigation{
         border-top: 1px solid $color-grey-dark;
-
         display: inline-block;
         padding-top: 2rem;
+
+        @include respond(port){
+            width: 100%;
+            text-align: center;
+        }
     }
     &__list{
         list-style: none;
@@ -49,5 +61,10 @@
         width: 80%;
         padding-top: 2rem;
         float: right;
+
+        @include respond(port){
+            width: 100%;
+            float: none;
+        }
     }
 }
