@@ -51,6 +51,13 @@ body{
     color: transparent;
     transition: all .2s;
 
+    @include respond(tab-port){
+        font-style: 3rem;
+    }
+    @include respond(phone){
+        font-style: 2.5rem;
+    }
+
     &:hover{
         transform: scale(1.1);
         transform:translateY(-.5rem) ;
