@@ -31,15 +31,15 @@ tab-land
 
 @mixin respond($breakpoint){
     @if $breakpoint == phone {
-        @media (max-width:37.5em) { @content };  //600px
+        @media only screen and (max-width:37.5em) { @content };  //600px
     }
     @if $breakpoint == port {
-        @media (max-width:56.25em) { @content }; //900px
+        @media only screen and (max-width:56.25em) { @content }; //900px
     }
     @if $breakpoint == land {
-        @media (max-width:75em) { @content };   //1200
+        @media only screen and (max-width:75em) { @content };   //1200
     }
     @if $breakpoint == desktop {
-        @media (min-width:112.5em) { @content }; //1800
+        @media only screen and (min-width:112.5em) { @content }; //1800
     }
 }
